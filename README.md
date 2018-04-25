@@ -1,7 +1,7 @@
 Services
 ===
 
-## Move to WPP
+Move to WPP
 ---
 
 This service is useful for people who would like to keep their downloaded wallpapers in one place and stored in folders by their `<width>x<height>` folders with one click.
