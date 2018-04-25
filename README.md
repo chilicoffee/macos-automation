@@ -14,7 +14,7 @@ Copy or symlink the `service/<worfklow file>` file to `/Users/$USER/Library/Serv
 Symlink: `ln -sf $PWD/service/<worfklow file> /Users/$USER/Library/Services/<worfklow file>`
 Copy: `cp service/<worfklow file> /Users/$USER/Library/Services/`
 
-1. Move to WPP
+Move to WPP
 ---
 
 This service is useful for people who would like to keep their downloaded wallpapers in one place and stored in folders by their `<width>x<height>` folders with one click.
@@ -31,7 +31,7 @@ Workflow will perform following steps for **each** file the service is run for.
 1. Make sure the destination directory exists
 1. Move the image file to the destination directory
 
-2. Set Desktop Picture on Display N
+Set Desktop Picture on Display N
 ---
 
 While MacOS has built in service for setting the wallpaper for the main display, it does lack support for other displays. This service will apply the selected picture to as the wallpaper of `N` display
