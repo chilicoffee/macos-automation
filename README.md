@@ -25,4 +25,5 @@ Workflow will perform following steps for **each** file the service is run for.
 1. Find out the input image file resolution
 1. Make sure the destination directory exists
 1. Move the image file to the destination directory
+
 ---
