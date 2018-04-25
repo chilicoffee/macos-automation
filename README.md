@@ -1,7 +1,7 @@
 # Services
 
-1. Move to WPP - Automatically move image file(s) to their resolution folder
-1. Set Desktop Picture on Display N - Assign selected image file as wallpaper for desktop `N`
+1. [Move to WPP](#move-to-wpp) - Automatically move image file(s) to their resolution folder
+1. [Set Desktop Picture on Display N](#set-desktop-picture-on-display-n) - Assign selected image file as wallpaper for desktop `N`
 
 More about MacOS services here: https://support.apple.com/kb/PH25241?viewlocale=en_US&locale=en_US
 
