@@ -1,6 +1,8 @@
 Services
 ===
 
+More about MacOS services here: https://support.apple.com/kb/PH25241?viewlocale=en_US&locale=en_US
+
 Move to WPP
 ---
 
