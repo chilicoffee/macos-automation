@@ -48,5 +48,7 @@ Translate selected text
 
 Simple workflow that takes selected text as input, then encodes it and opens custom google translate url in website pop-up (Safari).
 
+![image](/screenshots/translate.png?raw=true "Screenshot of Translate selected text (English -> Norwegian).workflow")
+
 ### Dependencies
 None
