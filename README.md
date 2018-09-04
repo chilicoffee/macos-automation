@@ -2,6 +2,10 @@
 
 1. [Move to WPP](#move-to-wpp) - Automatically move image file(s) to their resolution folder
 1. [Set Desktop Picture on Display N](#set-desktop-picture-on-display-n) - Assign selected image file as wallpaper for desktop `N`
+1. [Translate selected text](#translate-selected-text) - Translate selected text with google translate. Opens closable standalone window. Supported translations
+    - Auto Detect -> English
+    - Norwegian -> English
+    - English -> Norwegian
 
 More about MacOS services here: https://support.apple.com/kb/PH25241?viewlocale=en_US&locale=en_US
 
@@ -35,6 +39,14 @@ Set Desktop Picture on Display N
 ---
 
 While MacOS has built in service for setting the wallpaper for the main display, it does lack support for other displays. This service will apply the selected picture to as the wallpaper of `N` display
+
+### Dependencies
+None
+
+Translate selected text
+---
+
+Simple workflow that takes selected text as input, then encodes it and opens custom google translate url in website pop-up (Safari).
 
 ### Dependencies
 None
