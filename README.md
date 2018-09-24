@@ -6,6 +6,7 @@
     - Auto Detect -> English
     - Norwegian -> English
     - English -> Norwegian
+1. [Get POSIX path](#get-posix-path) - Copy POSIX path to clipboard of selected folder or file in MacOS Finder
 
 More about MacOS services here: https://support.apple.com/kb/PH25241?viewlocale=en_US&locale=en_US
 
@@ -49,6 +50,19 @@ Translate selected text
 Simple workflow that takes selected text as input, then encodes it and opens custom google translate url in website pop-up (Safari).
 
 ![image](/screenshots/translate.png?raw=true "Screenshot of Translate selected text (English -> Norwegian).workflow")
+
+### Dependencies
+None
+
+Get POSIX path
+---
+
+Dead simple.
+- Select file or folder in MacOS Finder
+- Right click and choose Get POSIX path
+- Paste it wherever you want it
+
+P.S. Spaces are escaped as per POSIX best practices.
 
 ### Dependencies
 None
