@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.38</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
 	<string>2.9</string>
 	<key>AMDocumentVersion</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0.2</string>
+				<string>1.0</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Automator</string>
@@ -45,18 +45,21 @@
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<string>/System/Library/Automator/Run JavaScript.action</string>
 				<key>ActionName</key>
-				<string>Run AppleScript</string>
+				<string>Run JavaScript</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	set output to "http://translate.google.com/#no/en/" &amp; urldecode(input as string)	return outputend runon urldecode(x)	set cmd to "'require \"cgi\"; puts CGI.escape(STDIN.read.chomp)'"	do shell script "echo " &amp; quoted form of x &amp; " | ruby -e " &amp; cmdend urldecode</string>
+					<string>function run(input) {
+	var output = "https://translate.google.com/#view=home&amp;op=translate&amp;sl=auto&amp;tl=en&amp;text=" + encodeURIComponent(input)
+	return output;
+}</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
+				<string>com.apple.Automator.RunJavaScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
+				<string>1.0</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -66,17 +69,18 @@
 					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>RunScriptAction</string>
+				<string>RunJavaScriptAction</string>
 				<key>InputUUID</key>
-				<string>E5655A8B-B688-4B0B-88BE-88EBD4AB977D</string>
+				<string>9F2DEA93-2A79-4769-89DF-98DE581AE177</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
+					<string>JavaScript</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>614B63E3-2E55-4C97-9A61-81CE75B79385</string>
+				<string>08047986-CDDC-41AA-8142-57B840B9A592</string>
 				<key>UUID</key>
-				<string>2C367DEE-6274-4C3E-A07B-A9A1B2EE59BE</string>
+				<string>6B616359-0690-4AA4-9B04-CDD7343833BB</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -86,12 +90,12 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>on run {input, parameters}
+						<string>function run(input, parameters) {
 	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
+	// Your script goes here
+
+	return input;
+}</string>
 						<key>name</key>
 						<string>source</string>
 						<key>required</key>
@@ -107,9 +111,9 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:368.000000</string>
+				<string>565.000000:368.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -173,7 +177,7 @@ end run</string>
 					<key>targetSizeX</key>
 					<integer>768</integer>
 					<key>targetSizeY</key>
-					<integer>480</integer>
+					<integer>800</integer>
 					<key>userAgentTag</key>
 					<integer>0</integer>
 				</dict>
@@ -284,12 +288,10 @@ end run</string>
 						<string>5</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:514.000000</string>
+				<string>565.000000:514.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Website Popup.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -299,10 +301,10 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>D0494283-EEAF-40FC-B994-34ECA67ED18C</key>
+		<key>DDF0F3B1-1818-43E8-90C7-A51F372CC4F0</key>
 		<dict>
 			<key>from</key>
-			<string>2C367DEE-6274-4C3E-A07B-A9A1B2EE59BE - 2C367DEE-6274-4C3E-A07B-A9A1B2EE59BE</string>
+			<string>6B616359-0690-4AA4-9B04-CDD7343833BB - 6B616359-0690-4AA4-9B04-CDD7343833BB</string>
 			<key>to</key>
 			<string>0EEE2730-B8C7-492E-8FE4-22325ACA2280 - 0EEE2730-B8C7-492E-8FE4-22325ACA2280</string>
 		</dict>
